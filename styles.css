@@ -1,0 +1,81 @@
+*{
+  font-family: Helvetica;
+  margin     : 0;
+  padding    : 0;
+}
+#main{
+  height: 100vh;
+  width : 100%;
+}
+#main>div{
+  display: inline-block;
+  height : 100vh;
+  width  : 50%;
+}
+#bird{
+  background-image   : url('https://cdn.hipwallpaper.com/i/15/15/iPIhCn.png');
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  float              : left;
+}
+#access{
+  margin-top: 10%;
+}
+#access input{
+  background-color: #fff;
+  border          : 1px solid #ccc;
+  height          : 35px;
+  text-indent     : 10px;
+  width           : 160px;
+}
+.login{
+  background   : #FFF;
+  border       : 1px solid #1DA1F2;
+  border-radius: 15px;
+  color        : #1DA1F2;
+  outline      : none;
+  padding      : 10px;
+  transition   : 0.3s;
+}
+.login:hover{
+  background-color: #EAF5FD;
+}
+#form{
+  align-items    : center;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+}
+#inputs{
+  margin-bottom: 15%;
+  margin-left  : 20%;
+  width        : 60%;
+}
+#unete{
+  margin-left: 30%;
+  width      : 40%;
+}
+#unete img{
+  margin-left: -10px;
+  width      : 60px;
+}
+#unete h2{
+  margin-bottom: 10%;
+}
+#unete button{
+  border-radius: 15px;
+  font-weight  : bold;
+  height       : 35px;
+  margin       : 10px 0;
+  width        : 100%;
+}
+#unete button:nth-child(1){
+  background-color: #1DA1F2;
+  border          : none;
+  color           : #fff;
+  outline         : none;
+}
+#unete button:nth-child(1):hover{
+  background-color: #006DBF
+}
