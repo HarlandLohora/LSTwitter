@@ -14,9 +14,9 @@
     <div id="form">
       <div id="inputs">
         <form action="" id="access">
-          <input type="text" placeholder="Usuario">
-          <input type="password" placeholder="Contraseña">
-          <button type="button" name="button" class="login" id="login">Iniciar sesión</button>
+          <input type="text" placeholder="Usuario" id="nombreUsuario">
+          <input type="password" placeholder="Contraseña" id="passOne">
+          <button type="button" name="button" class="login" id="login" onclick="loginFunc()">Iniciar sesión</button>
         </form>
       </div>
       <div id="unete">
@@ -24,8 +24,8 @@
         <h2>Descubre lo que está pasando en el mundo en este momento</h2>
         <h3>Únete hoy a Twitter.</h3>
         <div>
-          <button>Regístrarse</button>
-          <button class="login">Iniciar sesión</button>
+          <button onclick="modalSignUp()">Regístrarse</button>
+          <button class="login" onclick="loginRedirect()">Iniciar sesión</button>
         </div>
       </div>
     </div>
@@ -33,13 +33,16 @@
   <div id="modalRegistro" class="noMostrar">
     <div id ="registro">
       <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png" alt="">
-      <input type="text" placeholder="Nombre completo" id="nombreCompleto" required>
-      <input type="text" placeholder="Usuario" id="usuario" required>
-      <input type="date" id="date" required>
-      <input type="password" placeholder="Contraseña" id="passwordOne" required>
-      <input type="password" placeholder="Repetir contraseña" id="passwordTwo" required>
-      <button id="signUp">Registrarse</button>
+      <form>
+        <input type="text" onclick="selectInput(this)" class="registroInput" placeholder="Nombre completo" id="nombreCompleto" required>
+        <input type="text" onclick="selectInput(this)" class="registroInput" placeholder="Usuario" id="usuario" required>
+        <input type="date" onclick="selectInput(this)" class="registroInput" id="date" required>
+        <input type="password" onclick="selectInput(this)" class="registroInput" placeholder="Contraseña" id="passwordOne" required>
+        <input type="password" onclick="selectInput(this)" class="registroInput" placeholder="Repetir contraseña" id="passwordTwo" required>
+        <button id="signUp" onclick="signUp()">Registrarse</button>
+      </form>
     </div>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -105,7 +105,7 @@
   border-radius   : 10px;
   width           : 30%;
 }
-#registro input{
+.registroInput{
   border       : none;
   border-bottom: 1px solid #ccc;
   font-size    : 16px;
@@ -113,6 +113,9 @@
   outline      : none;
   text-indent  : 10px;
   width        : 90%;
+}
+.selectInput{
+
 }
 #registro button{
   background-color: #1DA1F2;
@@ -130,4 +133,13 @@
 }
 .noMostrar{
   display: none !important;
+}
+.select{
+  border       : none;
+  border-bottom: 2px solid #1DA1F2;
+  font-size    : 16px;
+  margin       : 3% 5%;
+  outline      : none;
+  text-indent  : 10px;
+  width        : 90%;
 }
