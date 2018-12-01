@@ -1,6 +1,11 @@
 function loginFunc(){
   let usuario = document.getElementById('nombreUsuario');
   let passOne = document.getElementById('passOne');
+  if( usuario.value != '' && passOne.value != ''){
+    
+  }else{
+    alert('Acceso denegado');
+  }
 }
 
 function signUp(){
@@ -9,13 +14,14 @@ function signUp(){
   let date           = document.getElementById('date');
   let passwordOne    = document.getElementById('passwordOne');
   let passwordTwo    = document.getElementById('passwordTwo');
-
-  nombreCompleto.value = "";
-  usuario.value        = "";
-  date.value           = "";
-  passwordOne.value    = "";
-  passwordTwo.value    = "";
-  window.location.replace("profile.html");
+  let completeForm   = false;
+  let samePassword   = false;
+  if(nombreCompleto.value != '' && usuario != ''.value && date.value != '' && passwordOne != '' && passwordTwo !='') completeForm = true;
+  if( passwordOne.value == passwordTwo.value ) samePassword = true
+  else( alert('Verifica tu contraseña'))
+  if( samePassword && completeForm){
+    window.location.replace("profile.html");
+  }
 }
 
 function loginRedirect(){

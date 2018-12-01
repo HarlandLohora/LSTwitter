@@ -36,11 +36,11 @@
       <div id="closeModalRegister" onclick="closeModalRegister()"><i class="fas fa-times"></i></div>
       <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png" alt="Twitter">
       <form>
-        <input type="text" onclick="selectInput(this)" class="registroInput" placeholder="Nombre completo" id="nombreCompleto" required>
-        <input type="text" onclick="selectInput(this)" class="registroInput" placeholder="Usuario" id="usuario" required>
-        <input type="date" onclick="selectInput(this)" class="registroInput" id="date" required>
-        <input type="password" onclick="selectInput(this)" class="registroInput" placeholder="Contraseña" id="passwordOne" required>
-        <input type="password" onclick="selectInput(this)" class="registroInput" placeholder="Repetir contraseña" id="passwordTwo" required>
+        <input type="text" onclick="selectInput(this)" class="registroInput" placeholder="Nombre completo" id="nombreCompleto" required autocomplete="off">
+        <input type="text" onclick="selectInput(this)" class="registroInput" placeholder="Usuario" id="usuario" required autocomplete="off">
+        <input type="date" onclick="selectInput(this)" class="registroInput" id="date" required autocomplete="off">
+        <input type="password" onclick="selectInput(this)" class="registroInput" placeholder="Contraseña" id="passwordOne" required autocomplete="off">
+        <input type="password" onclick="selectInput(this)" class="registroInput" placeholder="Repetir contraseña" id="passwordTwo" required autocomplete="off">
       </form>
       <button id="signUp" onclick="signUp()">Registrarse</button>
     </div>
