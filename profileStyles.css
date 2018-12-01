@@ -1,0 +1,231 @@
+*{
+  margin : 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+button{
+  outline: none !important;
+}
+.noMostrar{
+  display: none;
+}
+.delete{
+  float: right;
+}
+.cover{
+  background-color: #55acee;
+  height          : 25vh;
+}
+
+.nav-fixed{
+  background-color: #fff;
+  height          : 6vh;
+  position        : fixed;
+  width           : 100%;
+  z-index         : 1;
+}
+
+.nav:nth-child(1){
+  margin-left: 11.5vw;
+}
+
+.infoUser{
+
+}
+
+.divInfoUser{
+  display   : inline-block;
+  text-align: center;
+}
+
+.divInfoUser{
+  letter-spacing: 0;
+  margin        : 8px 15px;
+}
+.divInfoUser p{
+  margin : 0;
+  padding: 0;
+}
+.divInfoUser span{
+  margin : 0;
+  padding: 0;
+}
+
+.divInfoUser:nth-child(1){
+  margin-left: 30vw;
+}
+
+#complements{
+  display : inline-block;
+  float   : right;
+  position: absolute;
+  top     : 3px;
+  right   : 10vw;
+}
+
+#avatar{
+  background-image   : url('https://cdn-images-1.medium.com/max/1920/1*e35LkwPQGqxRoB4dCWCh4g.png');
+  background-position: center;
+  background-size    : cover;
+  border-radius      : 50%;
+  display            : inline-block;
+  height             : 5.3vh;
+  width              : 5.3vh;
+}
+
+#complements button{
+  background-color: #1da1f2;
+  color           : #fff;
+  border          : none;
+  border-radius   : 25px;
+  padding         : 5px 15px;
+  position        : relative;
+  top             : -10px;
+  font-weight     : bold;
+  outline         : none;
+}
+
+#complements button:hover{
+  background-color: #0066bf;
+}
+
+
+/*Img User*/
+
+.imgUser{
+  position: absolute;
+  top : 15vh;
+  left: 12vw;
+  border: 4px #fff solid;
+  border-radius: 50%;
+  width: 30vh;
+  height: 30vh;
+  background-image: url('https://cdn-images-1.medium.com/max/1920/1*e35LkwPQGqxRoB4dCWCh4g.png');
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.editar{
+  display: inline-block;
+  color:#eee;
+  position: relative;
+  top: -12px;
+  right: -80px;
+}
+
+#editar{
+  border: 1px black solid;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+
+/*Main*/
+.main{
+  background-color: #E6ECF0;
+  height: 80vh;
+}
+
+#userName{
+  width: 20vw;
+  margin-left: 9.5vw;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 45vh;
+}
+
+#userName p{
+  margin-bottom: 0;
+}
+
+
+#tweets{
+  display: inline-block;
+  width: 40vw;
+  height: 80vh;
+  background-color: #fff;
+  position: relative;
+  top : 10px;
+  left: 30vw;
+}
+
+
+#modalTweet{
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+#divTweet{
+  margin-left: 30vw;
+  margin-top: 5vh;
+  width: 40vw;
+  background-color: #fff;
+  text-align:center;
+  border-radius: 10px;
+}
+
+#divTweet p{
+  display: inline-block;
+  padding-top: 15px;
+}
+
+#closeModal{
+  width: 2vw;
+  position: absolute;
+  top: 7vh;
+  right: 30vw;
+}
+
+#bodyTweet{
+  background-color: #E8F5FE;
+  border-radius: 10px;
+  height: 31vh;
+  padding-left:3vw;
+  margin-top: 15px;
+}
+#bodyTweet button{
+  background-color: #1da1f2;
+  border:none;
+  border-radius: 10px;
+  color:#fff;
+  padding: 2px 15px;
+  outline: none;
+  position: relative;
+  right: -12.5vw;
+}
+
+#textTweet{
+  margin-top: 15px;
+  width: 35vw;
+  border-radius: 10px;
+  border:none;
+  padding:10px;
+  height: 25vh;
+  outline: none;
+  min-height: 4em;
+  background-color: #E8F5FE;
+}
+
+textarea{
+  resize: none;
+  outline: none;
+  width: 100%;
+  height: 20vh;
+  border:none;
+}
+.Tweets{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+.Tweets:hover{
+  background-color: #F5F8FA;
+}

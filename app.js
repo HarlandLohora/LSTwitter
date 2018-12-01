@@ -25,6 +25,7 @@ function loginRedirect(){
 function modalSignUp(){
   let modal = document.getElementById('modalRegistro');
   modal.classList.remove('noMostrar');
+  closeModalClick();
 }
 
 function selectInput(x){
@@ -33,4 +34,25 @@ function selectInput(x){
     allInputs[i].classList.remove('select');
   }
   x.classList.add('select');
+}
+
+function closeModalClick(){
+  let form       = document.getElementById('registro');
+  let modal      = document.getElementById('modalRegistro');
+  let formTouch  = false;
+  let modalTouch = false;
+  modal.addEventListener('click', () => {
+    modalTouch = true;
+    console.log('si');
+  });
+  form.addEventListener('click', () => {
+    formTouch = true;
+  });
+  console.log("modal"+modalTouch);
+  console.log(formTouch);
+  if( modalTouch == true && formTouch == false){
+    let modal = document.getElementById('modalRegistro');
+    modal.classList.add('noMostrar');
+    console.log('hi');
+  }
 }

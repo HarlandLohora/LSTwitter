@@ -4,10 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mis Tweets</title>
+  <link rel="icon" href="http://www.stickpng.com/assets/images/58e9196deb97430e819064f6.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="profileStyles.css">
-  <title></title>
 </head>
 <body>
-  
+  <nav class="nav-fixed">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"><i class="fas fa-home"></i> Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"><i class="fas fa-fire"></i> Momentos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"><i class="fas fa-bell"></i> Notificaciones</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"><i class="fas fa-envelope"></i>  Mensajes</a>
+      </li>
+    </ul>
+    <div id="complements">
+      <div id="avatar"></div>
+      <button onclick="tweet()">Twittear</button>
+    </div>
+  </nav>
+  <div class="cover"></div>
+  <div class="infoUser">
+    <div class="divInfoUser">
+      <p>Tweets</p>
+      <span id="numTweets">0</span>
+    </div>
+    <div class="divInfoUser">
+      <p>Siguiendo</p>
+      <span>0</span>
+    </div>
+    <div class="divInfoUser">
+      <p>Seguidores</p>
+      <span>0</span>
+    </div>
+    <div class="divInfoUser">
+      <p>Listas</p>
+      <span>0</span>
+    </div>
+    <div class="divInfoUser">
+      <p>Momentos</p>
+      <span>0</span>
+    </div>
+    <div class="editar">
+      <button id="editar">Editar perfil</button>
+    </div>
+  </div>
+  <div class="imgUser"></div>
+  <div class="main">
+    <div id="userName">
+      <h3 id="completeName"></h3>
+      <p><i class="fas fa-at"></i><span id="nickname"></span></p>
+      <p><i class="fas fa-calendar-alt"></i><span></span></p>
+    </div>
+    <div id="tweets"></div>
+  </div>
+  <div id="modalTweet" class="noMostrar">
+    <div id="divTweet">
+      <p>Redactar un nuevo Tweet</p><div id="closeModal" onclick="closeModal()"><i class="fas fa-times"></i></div>
+      <div id="bodyTweet">
+        <div id="textTweet"></div>
+        <button onclick="newTweet()">Twittear</button>
+      </div>
+    </div>
+  </div>
 </body>
+<script src="twitter.js"></script>
 </html>
