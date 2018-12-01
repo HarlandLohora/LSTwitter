@@ -42,6 +42,11 @@
 .login:hover{
   background-color: #EAF5FD;
 }
+#closeModalRegister{
+  float       : right;
+  margin-right: 12px;
+  margin-top  : 12px;
+}
 #form{
   align-items    : center;
   display        : flex;

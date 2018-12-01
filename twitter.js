@@ -1,3 +1,6 @@
+function cerrarSesion(){
+  window.location.replace("index.html");
+}
 function tweet(){
   let newTweet = document.getElementById('modalTweet');
   let textArea = document.createElement('textarea');

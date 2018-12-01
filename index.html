@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>LS Twitter</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png">
 </head>
 <body>
@@ -14,8 +15,8 @@
     <div id="form">
       <div id="inputs">
         <form action="" id="access">
-          <input type="text" placeholder="Usuario" id="nombreUsuario">
-          <input type="password" placeholder="Contraseña" id="passOne">
+          <input type="text" placeholder="Usuario" id="nombreUsuario" required>
+          <input type="password" placeholder="Contraseña" id="passOne" required>
           <button type="button" name="button" class="login" id="login" onclick="loginFunc()">Iniciar sesión</button>
         </form>
       </div>
@@ -32,15 +33,16 @@
   </div>
   <div id="modalRegistro" class="noMostrar">
     <div id ="registro">
-      <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png" alt="">
+      <div id="closeModalRegister" onclick="closeModalRegister()"><i class="fas fa-times"></i></div>
+      <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png" alt="Twitter">
       <form>
         <input type="text" onclick="selectInput(this)" class="registroInput" placeholder="Nombre completo" id="nombreCompleto" required>
         <input type="text" onclick="selectInput(this)" class="registroInput" placeholder="Usuario" id="usuario" required>
         <input type="date" onclick="selectInput(this)" class="registroInput" id="date" required>
         <input type="password" onclick="selectInput(this)" class="registroInput" placeholder="Contraseña" id="passwordOne" required>
         <input type="password" onclick="selectInput(this)" class="registroInput" placeholder="Repetir contraseña" id="passwordTwo" required>
-        <button id="signUp" onclick="signUp()">Registrarse</button>
       </form>
+      <button id="signUp" onclick="signUp()">Registrarse</button>
     </div>
   </div>
   <script src="app.js"></script>

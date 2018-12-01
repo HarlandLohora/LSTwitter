@@ -1,11 +1,6 @@
-// window.onload = () => {
-//
-// }
-
 function loginFunc(){
   let usuario = document.getElementById('nombreUsuario');
   let passOne = document.getElementById('passOne');
-
 }
 
 function signUp(){
@@ -14,7 +9,13 @@ function signUp(){
   let date           = document.getElementById('date');
   let passwordOne    = document.getElementById('passwordOne');
   let passwordTwo    = document.getElementById('passwordTwo');
-  console.log(nombreCompleto.value + " " + usuario.value + " " + date.value + " " + passwordOne.value + " " + passwordTwo.value);
+
+  nombreCompleto.value = "";
+  usuario.value        = "";
+  date.value           = "";
+  passwordOne.value    = "";
+  passwordTwo.value    = "";
+  window.location.replace("profile.html");
 }
 
 function loginRedirect(){
@@ -25,7 +26,6 @@ function loginRedirect(){
 function modalSignUp(){
   let modal = document.getElementById('modalRegistro');
   modal.classList.remove('noMostrar');
-  closeModalClick();
 }
 
 function selectInput(x){
@@ -36,23 +36,18 @@ function selectInput(x){
   x.classList.add('select');
 }
 
-function closeModalClick(){
-  let form       = document.getElementById('registro');
-  let modal      = document.getElementById('modalRegistro');
-  let formTouch  = false;
-  let modalTouch = false;
-  modal.addEventListener('click', () => {
-    modalTouch = true;
-    console.log('si');
-  });
-  form.addEventListener('click', () => {
-    formTouch = true;
-  });
-  console.log("modal"+modalTouch);
-  console.log(formTouch);
-  if( modalTouch == true && formTouch == false){
-    let modal = document.getElementById('modalRegistro');
-    modal.classList.add('noMostrar');
-    console.log('hi');
-  }
+function closeModalRegister(){
+  let modal          = document.getElementById('modalRegistro');
+  let nombreCompleto = document.getElementById('nombreCompleto');
+  let usuario        = document.getElementById('usuario');
+  let date           = document.getElementById('date');
+  let passwordOne    = document.getElementById('passwordOne');
+  let passwordTwo    = document.getElementById('passwordTwo');
+
+  nombreCompleto.value = "";
+  usuario.value        = "";
+  date.value           = "";
+  passwordOne.value    = "";
+  passwordTwo.value    = "";
+  modal.classList.add('noMostrar');
 }
